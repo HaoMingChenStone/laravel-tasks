@@ -139,7 +139,8 @@ return [
 
         'cache' => [
             'scheme' => 'tls'
-            'host' => env('AZURE_REDIS_HOST', '127.0.0.1'),
+            'url' => env('REDIS_URL'),
+            'host' => env('AZURE_HOST', '127.0.0.1'),
             'username' => env('AZURE_REDIS_USERNAME'),
             'password' => env('AZURE_REDIS_PASSWORD'),
             'port' => env('AZURE_REDIS_PORT', '6379'),
